@@ -1,0 +1,277 @@
+
+
+    body {
+        font-family: "Poppins", sans-serif;
+        
+    }
+    p{
+        color: rgb(153, 153, 153);
+    }
+
+
+
+   /* <!--======== S    T    A    R   T  ======  H    O     M    E ==========--> */
+
+
+        
+        .nav-link.active {
+           
+            color: #F47474 !important;
+        }
+          .social i{
+            transition: .5s;
+        }
+        .social a:hover i{
+            color: #F47474;
+        }
+        
+
+        .carousel-text h2{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 4.375rem ;
+            
+        }
+        .bg-img-1{
+            background-image: url("../img/slideshow-1.jpg");
+         
+        }
+        .bg-img-2{
+            background-image: url("../img/slideshow-2.jpg");
+            
+        }
+        .bg-img-3{
+            background-image: url("../img/slideshow-3.jpg");
+            
+        }
+        .carousel-img{
+            height: 100vh;
+            background-position: center center;
+            background-size: cover;
+           
+        }
+        .setting{
+            top: 30%;
+            z-index: 20;
+            background-color: rgba(0, 0, 0, 0.504);
+            color: white;
+            padding: .625rem;
+            cursor: pointer;
+            font-size: 1.25rem;
+        }
+        .mouse{
+            width: 1.875rem;
+            height: 3.125rem;
+           border: .1875rem solid white;
+           border-radius: 6.25rem;
+            top: 80%;
+            left: 50%;
+            z-index: 15;
+            position: relative;
+            
+        }
+
+        .mouse::after{
+            content: "";
+            height: .625rem;
+            width: .625rem;
+            border-radius: 3.125rem;
+            position: absolute;
+            background-color: white;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: up 1.5s infinite ease-in-out;
+        }
+
+        @keyframes up{
+            0%{
+                  top: 50%;
+            }
+
+            50%{
+                    top :70%;
+            }
+
+            100%{
+                    top: 80%;
+                    opacity: 0;
+            }
+        }
+
+        
+/* 
+    <!--===========E     N     D   ========  H    O     M    E==================== --> */
+
+
+/* 
+    <!--======== S    T    A    R   T  ======  A     B    O     U      T ==========--> */
+    .main-title h2.shaddow{
+        font-size: 4.375rem;
+        opacity: .3;
+        padding-bottom: .625rem;
+        
+    }
+
+    .main-title .title{
+        position: relative;
+        
+    }
+
+
+    
+
+    .main-title h2.main::before{
+    content: "";
+    width: 20%;
+    height: .0625rem;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 25% / 2);
+    transition: 1s;
+    
+    
+    }
+    .main-title .title:hover h2.main::before{
+        content: "";
+        width:50%;
+        left: calc(50% - 50% / 2);
+    }
+   .progress{
+    height: .3125rem;
+   }
+
+    /* <!--===========E     N     D   ========   A     B    O     U      T  ==================== --> */
+
+
+    /* <!--===========S   T   A    R    T   ========   T    E    A    M  ==================== --> */
+
+    
+    
+    .teams  .team-item .layer .icon {
+       opacity: 0;
+      
+    }
+    .teams  .team-item .layer .icon i {
+    transform: translateY(250%);
+    }
+    .teams  .team-item .layer,
+    .teams  .team-item .layer .icon i,
+    .teams .team-item img{
+        transition:all 0.5s;
+    }
+    .teams  .team-item .layer:hover {
+        
+        background-color: #f474748f; 
+         
+     
+     }
+
+    
+     .teams  .team-item .layer:hover .icon{
+       opacity: 1;
+     }
+     .teams  .team-item .layer:hover .icon i{
+        transform: translateY(0);
+     }
+     .teams .team-item{
+        overflow: hidden;
+     }
+     .teams .team-item:hover img{
+        transform: scale(1.15);
+
+     }
+
+
+    /* <!--===========E     N     D   ========   T    E    A   M   ==================== --> */
+
+
+    /* <!--======== S    T    A    R   T  ======  S    E     R      V      I     C     E     S ==========--> */
+
+.services i{
+    color: #F47474;
+    font-size: 2rem;
+}
+
+    /* <!--===========E     N     D   ======== S    E     R      V      I     C     E     S  ==================== --> */
+
+
+
+    /* <!--======== S    T    A    R   T  ======  T      E      S    T      I    M    O    N    I   A    L   ==========--> */
+
+    .carousel-indicators [data-bs-target]{
+        width: 18.75rem;
+        height: 18.75rem;
+        border-radius: 50%;
+        text-indent: 0;
+        border: solid .0625rem #f4f4f4f4;
+    }
+
+    /* <!--===========E     N     D   ========   T      E      S    T      I    M    O    N    I   A    L  ==================== --> */
+
+
+
+
+
+    /* <!--======== S    T    A    R   T  ======C   O   N   T    A    C    T ==========--> */
+
+.contact ul li i{
+    color: #F47474;
+    font-size: 1.5625rem;
+}
+.contact li:not(.none){
+    border-bottom: .0625rem solid rgba(0, 0, 0, 0.221);
+    padding-top: .9375rem;
+}
+
+    /* <!--===========E     N     D   ========C   O   N   T    A    C    T ==================== --> */
+
+
+    .footer {
+        background-color: rgba(0, 0, 0, 0.921);
+       
+        background-size: cover;
+        min-height: 18.75rem;
+    }
+    .up{
+        cursor: pointer;
+        background-color: #e24a4a;
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 50%;
+        opacity: 0.9;
+        top: -5%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
+    }
+    .up:hover{
+        opacity: 1;
+    }
+    .copyright{
+        background-color: black;
+    }
+
+    .footer .tags span{ 
+        padding: 5px;
+        border: .0625rem solid rgba(255, 255, 255, 0.148);
+        margin: 0 .125rem;
+        border-radius: .3125rem;
+
+    }
+    
+    .footer p:hover{
+        color: #F47474;
+
+    }
+    .copyright li i,.copyright span, .footer p{
+        cursor: pointer;
+        transition: 1s;
+
+    }
+    .copyright li:hover i,.copyright span:hover
+    {
+        color: #F47474;
+    
+
+    }
